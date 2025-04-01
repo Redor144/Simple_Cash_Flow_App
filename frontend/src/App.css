@@ -1,0 +1,175 @@
+/* App.css */
+
+/* Reset domyślnych marginesów i paddingów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111; /* ciemne tło */
+  color: #ffffff;         /* biały tekst */
+}
+
+/* Główny kontener aplikacji */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Nawigacja (navbar) */
+.navbar {
+  background-color: #222; /* trochę jaśniejszy odcień ciemnego */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+/* Główna zawartość strony */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Stopka (opcjonalnie) */
+.footer {
+  background-color: #222;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Landing page */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* cześć ekranu */
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.landing-button {
+  background-color: #06c167;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0.3rem;
+}
+
+.landing-button:hover {
+  background-color: #04a556;
+}
+
+/* Formularze (Login, Register) */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-primary {
+  background-color: #06c167;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-primary:hover {
+  background-color: #04a556;
+}
+
+/* Karty / boxy z listą (Dashboard, Transakcje, Cele) */
+.card {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.card ul li {
+  margin: 0.3rem 0;
+}
+
+/* Linki w tekście */
+a {
+  color: #06c167;
+}
+
+a:hover {
+  text-decoration: underline;
+}

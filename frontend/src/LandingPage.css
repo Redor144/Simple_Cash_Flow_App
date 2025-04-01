@@ -1,0 +1,71 @@
+/* LandingPage.css */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Kontener całej strony */
+  .landing-container {
+    background-color: #111; /* ciemne tło */
+    color: #fff;
+    min-height: 100vh;      /* wypełnia całe okno przeglądarki */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Górny pasek nawigacji */
+  .landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #222;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Główna część strony */
+  .landing-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .landing-main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #06c167;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #04a556;
+  }
+  
